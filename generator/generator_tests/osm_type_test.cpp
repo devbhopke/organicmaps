@@ -26,24 +26,6 @@ using namespace tests;
 
 using Tags = std::vector<OsmElement::Tag>;
 
-void DumpTypes(std::vector<uint32_t> const & v)
-{
-  Classificator const & c = classif();
-  for (size_t i = 0; i < v.size(); ++i)
-    std::cout << c.GetFullObjectName(v[i]) << std::endl;
-}
-
-void DumpParsedTypes(Tags const & tags)
-{
-  OsmElement e;
-  FillXmlElement(tags, &e);
-
-  FeatureBuilderParams params;
-  ftype::GetNameAndType(&e, params);
-
-  DumpTypes(params.m_types);
-}
-
 void TestSurfaceTypes(std::string const & surface, std::string const & smoothness,
                       std::string const & grade, char const * value)
 {
@@ -76,6 +58,9 @@ FeatureBuilderParams GetFeatureBuilderParams(Tags const & tags)
   FillXmlElement(tags, &e);
   FeatureBuilderParams params;
 
+  static TagReplacer tagReplacer(GetPlatform().ResourcesDir() + REPLACED_TAGS_FILE);
+  tagReplacer.Process(e);
+
   ftype::GetNameAndType(&e, params);
   return params;
 }
@@ -98,36 +83,48 @@ UNIT_CLASS_TEST(TestWithClassificator, OsmType_SkipDummy)
 
 UNIT_CLASS_TEST(TestWithClassificator, OsmType_Check)
 {
-  Tags const tags1 = {
-    { "highway", "primary" },
-    { "motorroad", "yes" },
-    { "name", "Каширское шоссе" },
-    { "oneway", "yes" }
-  };
+  {
+    Tags const tags = {
+      { "highway", "primary" },
+      { "motorroad", "yes" },
+      { "name", "Каширское шоссе" },
+      { "oneway", "yes" }
+    };
 
-  Tags const tags2 = {
-    { "highway", "primary" },
-    { "name", "Каширское шоссе" },
-    { "oneway", "-1" },
-    { "motorroad", "yes" }
-  };
+    auto const params = GetFeatureBuilderParams(tags);
 
-  Tags const tags3 = {
-    { "admin_level", "4" },
-    { "border_type", "state" },
-    { "boundary", "administrative" }
-  };
+    TEST_EQUAL(params.m_types.size(), 2, (params));
+    TEST(params.IsTypeExist(GetType({"highway", "primary"})), ());
+    TEST(params.IsTypeExist(GetType({"hwtag", "oneway"})), ());
+  }
 
-  Tags const tags4 = {
-    { "border_type", "state" },
-    { "admin_level", "4" },
-    { "boundary", "administrative" }
-  };
+  {
+    Tags const tags = {
+      { "highway", "primary" },
+      { "name", "Каширское шоссе" },
+      { "oneway", "-1" },
+      { "motorroad", "yes" }
+    };
 
-  DumpParsedTypes(tags1);
-  DumpParsedTypes(tags2);
-  DumpParsedTypes(tags3);
-  DumpParsedTypes(tags4);
+    auto const params = GetFeatureBuilderParams(tags);
+
+    TEST_EQUAL(params.m_types.size(), 2, (params));
+    TEST(params.IsTypeExist(GetType({"highway", "primary"})), ());
+    TEST(params.IsTypeExist(GetType({"hwtag", "oneway"})), ());
+  }
+
+  {
+    Tags const tags = {
+      { "admin_level", "4" },
+      { "border_type", "state" },
+      { "boundary", "administrative" }
+    };
+
+    auto const params = GetFeatureBuilderParams(tags);
+
+    TEST_EQUAL(params.m_types.size(), 1, (params));
+    TEST(params.IsTypeExist(GetType({"boundary", "administrative", "4"})), ());
+  }
 }
 
 UNIT_CLASS_TEST(TestWithClassificator, OsmType_Combined)
@@ -281,14 +278,7 @@ UNIT_CLASS_TEST(TestWithClassificator, OsmType_Synonyms)
       { "drinkable", "yes"},
     };
 
-    OsmElement e;
-    FillXmlElement(tags, &e);
-
-    TagReplacer tagReplacer(GetPlatform().ResourcesDir() + REPLACED_TAGS_FILE);
-    tagReplacer.Process(e);
-
-    FeatureBuilderParams params;
-    ftype::GetNameAndType(&e, params);
+    auto const params = GetFeatureBuilderParams(tags);
 
     TEST_EQUAL(params.m_types.size(), 7, (params));
 
@@ -859,14 +849,7 @@ UNIT_CLASS_TEST(TestWithClassificator, OsmType_Entrance)
       { "barrier", "entrance" },
     };
 
-    OsmElement e;
-    FillXmlElement(tags, &e);
-
-    TagReplacer tagReplacer(GetPlatform().ResourcesDir() + REPLACED_TAGS_FILE);
-    tagReplacer.Process(e);
-
-    FeatureBuilderParams params;
-    ftype::GetNameAndType(&e, params);
+    auto const params = GetFeatureBuilderParams(tags);
 
     TEST_EQUAL(params.m_types.size(), 2, (params));
     TEST(params.IsTypeExist(GetType({"entrance"})), (params));
@@ -1311,6 +1294,56 @@ UNIT_CLASS_TEST(TestWithClassificator, OsmType_Junctions)
 
     TEST_EQUAL(params.m_types.size(), 1, (params));
     TEST(params.IsTypeExist(GetType({"junction", "roundabout"})), (params));
+  }
+}
+
+UNIT_CLASS_TEST(TestWithClassificator, OsmType_Recycling)
+{
+  {
+    Tags const tags = {
+      {"amenity", "recycling" },
+      {"recycling:glass_bottles", "yes"},
+      {"recycling:green_waste", "yes"},
+    };
+
+    auto const params = GetFeatureBuilderParams(tags);
+
+    TEST_EQUAL(params.m_types.size(), 3, (params));
+    TEST(params.IsTypeExist(GetType({"amenity", "recycling"})), (params));
+    TEST(params.IsTypeExist(GetType({"recycling", "glass_bottles"})), (params));
+    TEST(params.IsTypeExist(GetType({"recycling", "green_waste"})), (params));
+  }
+
+  {
+    Tags const tags = {
+      {"amenity", "recycling" },
+      {"recycling_type", "centre"},
+      {"recycling:garden_waste", "no"},
+      {"recycling:organic", "no"},
+      {"recycling:glass", "yes"},
+    };
+
+    auto const params = GetFeatureBuilderParams(tags);
+
+    TEST_EQUAL(params.m_types.size(), 2, (params));
+    TEST(params.IsTypeExist(GetType({"amenity", "recycling", "centre"})), (params));
+    TEST(params.IsTypeExist(GetType({"recycling", "glass_bottles"})), (params));
+  }
+
+  {
+    Tags const tags = {
+      {"amenity", "recycling" },
+      {"recycling_type", "container"},
+      {"recycling:metal", "yes"},
+      {"recycling:batteries", "yes"},
+    };
+
+    auto const params = GetFeatureBuilderParams(tags);
+
+    TEST_EQUAL(params.m_types.size(), 3, (params));
+    TEST(params.IsTypeExist(GetType({"amenity", "recycling", "container"})), (params));
+    TEST(params.IsTypeExist(GetType({"recycling", "scrap_metal"})), (params));
+    TEST(params.IsTypeExist(GetType({"recycling", "batteries"})), (params));
   }
 }
 
@@ -1962,9 +1995,9 @@ UNIT_CLASS_TEST(TestWithClassificator, OsmType_ComplexTypesSmoke)
     {{"amenity", "place_of_worship", "muslim"}, {{"amenity", "place_of_worship"}, {"religion", "muslim"}}},
     {{"amenity", "place_of_worship", "shinto"}, {{"amenity", "place_of_worship"}, {"religion", "shinto"}}},
     {{"amenity", "place_of_worship", "taoist"}, {{"amenity", "place_of_worship"}, {"religion", "taoist"}}},
-    {{"amenity", "recycling"}, {{"amenity", "recycling"}, {"recycling_type","centre"}}},
-    {{"amenity", "recycling_container"}, {{"amenity", "recycling"}, {"recycling_type","container"}}},
-    {{"amenity", "recycling_container"}, {{"amenity", "recycling"}}},
+    {{"amenity", "recycling", "centre"}, {{"amenity", "recycling"}, {"recycling_type","centre"}}},
+    {{"amenity", "recycling", "container"}, {{"amenity", "recycling"}, {"recycling_type","container"}}},
+    {{"amenity", "recycling"}, {{"amenity", "recycling"}}},
     {{"amenity", "vending_machine", "cigarettes"}, {{"amenity", "vending_machine"}, {"vending", "cigarettes"}}},
     {{"amenity", "vending_machine", "drinks"}, {{"amenity", "vending_machine"}, {"vending", "drinks"}}},
     {{"amenity", "vending_machine", "parking_tickets"}, {{"amenity", "vending_machine"}, {"vending", "parking_tickets"}}},
