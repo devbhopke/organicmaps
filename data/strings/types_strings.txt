@@ -3940,14 +3940,6 @@
     uk = Адміністративний поділ
     zh-Hans = 4级行政区域界线
 
-  [type.boundary.administrative.4.state]
-    en = boundary-administrative-4-state
-    pt = Fronteira administrativa
-    pt-BR = Fronteira administrativa
-    ru = Административная граница
-    uk = Адміністративний поділ
-    zh-Hans = 4级州省界线
-
   [type.boundary.administrative.5]
     en = boundary-administrative-5
     pt = Fronteira administrativa
