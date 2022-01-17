@@ -12058,14 +12058,6 @@
     ru = Тупик
     uk = Тупик
 
-  [type.noexit.motor_vehicle]
-    en = noexit-motor_vehicle
-    ja = 行き止まり
-    pl = Ślepy koniec drogi dla pojazdów mechanicznych
-    pt = Via sem saída para veículos a motor
-    pt-BR = Via sem saída para veículos a motor
-    ru = Тупик для моторного транспорта
-
   [type.office]
     en = Office
     ar = مكتب
