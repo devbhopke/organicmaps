@@ -765,9 +765,10 @@
 	<string name="type.amenity.prison">Тюрьма</string>
 	<string name="type.amenity.pub">Паб</string>
 	<string name="type.amenity.public_bookcase">Книгообмен</string>
-	<string name="type.amenity.recycling">Приём вторсырья</string>
-	<string name="type.amenity.recycling_container">Контейнер для вторсырья</string>
-	<string name="type.recycling.toxic">Ядовитые отходы</string>
+	<string name="type.amenity.recycling.centre">Приём вторсырья</string>
+	<string name="type.amenity.recycling">Контейнер для вторсырья</string>
+	<string name="type.amenity.recycling.container">Контейнер для вторсырья</string>
+	<string name="type.recycling.batteries">Батарейки</string>
 	<string name="type.recycling.clothes">Старая одежда</string>
 	<string name="type.recycling.glass_bottles">Стеклотара</string>
 	<string name="type.recycling.paper">Макулатура</string>
@@ -775,6 +776,10 @@
 	<string name="type.recycling.plastic_bottles">Сбор пластиковых бутылок</string>
 	<string name="type.recycling.scrap_metal">Металлолом</string>
 	<string name="type.recycling.small_appliances">Электроотходы</string>
+	<string name="type.recycling.cans">Банки</string>
+	<string name="type.recycling.shoes">Старая обувь</string>
+	<string name="type.recycling.green_waste">Органические отходы</string>
+	<string name="type.recycling.cartons">Картон</string>
 	<string name="type.amenity.restaurant">Ресторан</string>
 	<string name="type.amenity.school">Школа</string>
 	<string name="type.amenity.shelter">Укрытие</string>
@@ -818,7 +823,6 @@
 	<string name="type.boundary.administrative.2">Административная граница</string>
 	<string name="type.boundary.administrative.3">Административная граница</string>
 	<string name="type.boundary.administrative.4">Административная граница</string>
-	<string name="type.boundary.administrative.4.state">Административная граница</string>
 	<string name="type.boundary.administrative.5">Административная граница</string>
 	<string name="type.boundary.administrative.6">Административная граница</string>
 	<string name="type.boundary.administrative.7">Административная граница</string>
@@ -1220,7 +1224,6 @@
 	<string name="type.natural.wetland.bog">Торфяное болото</string>
 	<string name="type.natural.wetland.marsh">Болотистая местность</string>
 	<string name="type.noexit">Тупик</string>
-	<string name="type.noexit.motor_vehicle">Тупик для моторного транспорта</string>
 	<string name="type.office">Офис</string>
 	<string name="type.office.company">Организация</string>
 	<string name="type.office.estate_agent">Агентство недвижимости</string>

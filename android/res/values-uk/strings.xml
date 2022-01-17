@@ -746,9 +746,10 @@
 	<string name="type.amenity.prison">В\'язниця</string>
 	<string name="type.amenity.pub">Паб</string>
 	<string name="type.amenity.public_bookcase">Книгообмін</string>
-	<string name="type.amenity.recycling">Прийом вторсировини</string>
-	<string name="type.amenity.recycling_container">Контейнер для вторсировини</string>
-	<string name="type.recycling.toxic">Отруйні відходи</string>
+	<string name="type.amenity.recycling.centre">Прийом вторсировини</string>
+	<string name="type.amenity.recycling">Контейнер для вторсировини</string>
+	<string name="type.amenity.recycling.container">Контейнер для вторсировини</string>
+	<string name="type.recycling.batteries">Батарейки</string>
 	<string name="type.recycling.clothes">Старий одяг</string>
 	<string name="type.recycling.glass_bottles">Склотара</string>
 	<string name="type.recycling.paper">Макулатура</string>
@@ -795,7 +796,6 @@
 	<string name="type.boundary.administrative.11">Адміністративний поділ</string>
 	<string name="type.boundary.administrative.2">Адміністративний поділ</string>
 	<string name="type.boundary.administrative.4">Адміністративний поділ</string>
-	<string name="type.boundary.administrative.4.state">Адміністративний поділ</string>
 	<string name="type.boundary.administrative.5">Адміністративний поділ</string>
 	<string name="type.boundary.administrative.6">Адміністративний поділ</string>
 	<string name="type.boundary.administrative.7">Адміністративний поділ</string>

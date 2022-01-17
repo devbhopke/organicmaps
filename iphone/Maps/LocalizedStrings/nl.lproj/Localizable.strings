@@ -1381,11 +1381,13 @@
 
 "type.amenity.public_bookcase" = "Boekenkast";
 
-"type.amenity.recycling" = "Milieustraat";
+"type.amenity.recycling.centre" = "Milieustraat";
 
-"type.amenity.recycling_container" = "Recycling container";
+"type.amenity.recycling" = "Recycling container";
 
-"type.recycling.toxic" = "Giftig afval";
+"type.amenity.recycling.container" = "Recycling container";
+
+"type.recycling.batteries" = "Batterijen";
 
 "type.recycling.clothes" = "Oude kleding";
 
@@ -1400,6 +1402,14 @@
 "type.recycling.scrap_metal" = "Schroot";
 
 "type.recycling.small_appliances" = "Elektronisch afval";
+
+"type.recycling.cans" = "Cans";
+
+"type.recycling.shoes" = "Old Shoes";
+
+"type.recycling.green_waste" = "Green/Organic Waste";
+
+"type.recycling.cartons" = "Cartons";
 
 "type.amenity.restaurant" = "Restaurant";
 
@@ -1486,8 +1496,6 @@
 "type.boundary.administrative.3" = "boundary-administrative-3";
 
 "type.boundary.administrative.4" = "boundary-administrative-4";
-
-"type.boundary.administrative.4.state" = "boundary-administrative-4-state";
 
 "type.boundary.administrative.5" = "boundary-administrative-5";
 
@@ -2322,8 +2330,6 @@
 "type.natural.wetland.marsh" = "Moeras";
 
 "type.noexit" = "noexit";
-
-"type.noexit.motor_vehicle" = "noexit-motor_vehicle";
 
 "type.office" = "Kantoor";
 

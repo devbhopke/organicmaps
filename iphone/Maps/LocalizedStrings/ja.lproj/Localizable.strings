@@ -1381,11 +1381,13 @@
 
 "type.amenity.public_bookcase" = "街角文庫";
 
-"type.amenity.recycling" = "リサイクルセンター";
+"type.amenity.recycling.centre" = "リサイクルセンター";
 
-"type.amenity.recycling_container" = "リサイクルボックス";
+"type.amenity.recycling" = "リサイクルボックス";
 
-"type.recycling.toxic" = "有毒廃棄物";
+"type.amenity.recycling.container" = "リサイクルボックス";
+
+"type.recycling.batteries" = "バッテリー";
 
 "type.recycling.clothes" = "古着";
 
@@ -1400,6 +1402,14 @@
 "type.recycling.scrap_metal" = "スクラップ金属";
 
 "type.recycling.small_appliances" = "電子廃棄物";
+
+"type.recycling.cans" = "Cans";
+
+"type.recycling.shoes" = "Old Shoes";
+
+"type.recycling.green_waste" = "Green/Organic Waste";
+
+"type.recycling.cartons" = "Cartons";
 
 "type.amenity.restaurant" = "レストラン";
 
@@ -1486,8 +1496,6 @@
 "type.boundary.administrative.3" = "boundary-administrative-3";
 
 "type.boundary.administrative.4" = "boundary-administrative-4";
-
-"type.boundary.administrative.4.state" = "boundary-administrative-4-state";
 
 "type.boundary.administrative.5" = "boundary-administrative-5";
 
@@ -2322,8 +2330,6 @@
 "type.natural.wetland.marsh" = "沼地";
 
 "type.noexit" = "行き止まり";
-
-"type.noexit.motor_vehicle" = "行き止まり";
 
 "type.office" = "オフィス";
 

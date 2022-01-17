@@ -663,6 +663,7 @@
 	<string name="enable_screen_sleep_description">Дазваляе экрану засынаць пасля перыяда бездзеяння.</string>
 
 	<!-- SECTION: Types -->
+	<string name="type.recycling.batteries">Батарэйкі</string>
 	<string name="type.barrier.chain">Ланцуг</string>
 	<string name="type.barrier.lift_gate">Шлагбаўм</string>
 	<string name="type.barrier.swing_gate">Шлагбаўм</string>

@@ -1381,11 +1381,13 @@
 
 "type.amenity.public_bookcase" = "Biblioteca livre";
 
-"type.amenity.recycling" = "Centro de reciclagem";
+"type.amenity.recycling.centre" = "Centro de reciclagem";
 
-"type.amenity.recycling_container" = "Recipiente de reciclagem";
+"type.amenity.recycling" = "Recipiente de reciclagem";
 
-"type.recycling.toxic" = "Lixo tóxico";
+"type.amenity.recycling.container" = "Recipiente de reciclagem";
+
+"type.recycling.batteries" = "Baterias";
 
 "type.recycling.clothes" = "Roupas velhas";
 
@@ -1400,6 +1402,14 @@
 "type.recycling.scrap_metal" = "Ferro velho";
 
 "type.recycling.small_appliances" = "Lixo eletrônico";
+
+"type.recycling.cans" = "Cans";
+
+"type.recycling.shoes" = "Old Shoes";
+
+"type.recycling.green_waste" = "Green/Organic Waste";
+
+"type.recycling.cartons" = "Cartons";
 
 "type.amenity.restaurant" = "Restaurante";
 
@@ -1486,8 +1496,6 @@
 "type.boundary.administrative.3" = "Fronteira administrativa";
 
 "type.boundary.administrative.4" = "Fronteira administrativa";
-
-"type.boundary.administrative.4.state" = "Fronteira administrativa";
 
 "type.boundary.administrative.5" = "Fronteira administrativa";
 
@@ -2322,8 +2330,6 @@
 "type.natural.wetland.marsh" = "Zona úmida";
 
 "type.noexit" = "Via sem saída";
-
-"type.noexit.motor_vehicle" = "Via sem saída para veículos a motor";
 
 "type.office" = "Escritório";
 

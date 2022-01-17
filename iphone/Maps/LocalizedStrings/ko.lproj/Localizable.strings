@@ -1381,11 +1381,13 @@
 
 "type.amenity.public_bookcase" = "도서 교환";
 
-"type.amenity.recycling" = "재활용센터";
+"type.amenity.recycling.centre" = "재활용센터";
 
-"type.amenity.recycling_container" = "재활용 쓰레기통";
+"type.amenity.recycling" = "재활용 쓰레기통";
 
-"type.recycling.toxic" = "유독성 폐기물";
+"type.amenity.recycling.container" = "재활용 쓰레기통";
+
+"type.recycling.batteries" = "배터리";
 
 "type.recycling.clothes" = "낡은 옷";
 
@@ -1400,6 +1402,14 @@
 "type.recycling.scrap_metal" = "고철";
 
 "type.recycling.small_appliances" = "전자제품 쓰레기";
+
+"type.recycling.cans" = "Cans";
+
+"type.recycling.shoes" = "Old Shoes";
+
+"type.recycling.green_waste" = "Green/Organic Waste";
+
+"type.recycling.cartons" = "Cartons";
 
 "type.amenity.restaurant" = "레스토랑";
 
@@ -1486,8 +1496,6 @@
 "type.boundary.administrative.3" = "boundary-administrative-3";
 
 "type.boundary.administrative.4" = "boundary-administrative-4";
-
-"type.boundary.administrative.4.state" = "boundary-administrative-4-state";
 
 "type.boundary.administrative.5" = "boundary-administrative-5";
 
@@ -2322,8 +2330,6 @@
 "type.natural.wetland.marsh" = "Wetland";
 
 "type.noexit" = "noexit";
-
-"type.noexit.motor_vehicle" = "noexit-motor_vehicle";
 
 "type.office" = "사무실";
 

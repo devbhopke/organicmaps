@@ -1381,11 +1381,13 @@
 
 "type.amenity.public_bookcase" = "公共书架";
 
-"type.amenity.recycling" = "资源回收设施";
+"type.amenity.recycling.centre" = "资源回收设施";
 
-"type.amenity.recycling_container" = "回收容器";
+"type.amenity.recycling" = "回收容器";
 
-"type.recycling.toxic" = "有毒垃圾";
+"type.amenity.recycling.container" = "回收容器";
+
+"type.recycling.batteries" = "电池";
 
 "type.recycling.clothes" = "旧衣物";
 
@@ -1400,6 +1402,14 @@
 "type.recycling.scrap_metal" = "废金属";
 
 "type.recycling.small_appliances" = "电子垃圾";
+
+"type.recycling.cans" = "Cans";
+
+"type.recycling.shoes" = "Old Shoes";
+
+"type.recycling.green_waste" = "Green/Organic Waste";
+
+"type.recycling.cartons" = "Cartons";
 
 "type.amenity.restaurant" = "餐馆";
 
@@ -1486,8 +1496,6 @@
 "type.boundary.administrative.3" = "3级行政区域界线";
 
 "type.boundary.administrative.4" = "4级行政区域界线";
-
-"type.boundary.administrative.4.state" = "4级州省界线";
 
 "type.boundary.administrative.5" = "5级行政区域界线";
 
@@ -2322,8 +2330,6 @@
 "type.natural.wetland.marsh" = "沼泽地";
 
 "type.noexit" = "noexit";
-
-"type.noexit.motor_vehicle" = "noexit-motor_vehicle";
 
 "type.office" = "办公地点";
 

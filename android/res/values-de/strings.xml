@@ -745,9 +745,10 @@
 	<string name="type.amenity.prison">Gefängnis</string>
 	<string name="type.amenity.pub">Kneipe</string>
 	<string name="type.amenity.public_bookcase">Bücherschrank</string>
-	<string name="type.amenity.recycling">Recyclinghof</string>
-	<string name="type.amenity.recycling_container">Wertstoffcontainer</string>
-	<string name="type.recycling.toxic">Giftmüll</string>
+	<string name="type.amenity.recycling.centre">Recyclinghof</string>
+	<string name="type.amenity.recycling">Wertstoffcontainer</string>
+	<string name="type.amenity.recycling.container">Wertstoffcontainer</string>
+	<string name="type.recycling.batteries">Batterien</string>
 	<string name="type.recycling.clothes">Altkleider</string>
 	<string name="type.recycling.glass_bottles">Glas</string>
 	<string name="type.recycling.paper">Papier</string>

@@ -1381,11 +1381,13 @@
 
 "type.amenity.public_bookcase" = "Kệ sách";
 
-"type.amenity.recycling" = "Trung tâm tái sinh";
+"type.amenity.recycling.centre" = "Trung tâm tái sinh";
 
-"type.amenity.recycling_container" = "Thùng rác";
+"type.amenity.recycling" = "Thùng rác";
 
-"type.recycling.toxic" = "Chất thải độc hại";
+"type.amenity.recycling.container" = "Thùng rác";
+
+"type.recycling.batteries" = "Ắc quy";
 
 "type.recycling.clothes" = "Quần áo cũ";
 
@@ -1400,6 +1402,14 @@
 "type.recycling.scrap_metal" = "Phế liệu kim loại";
 
 "type.recycling.small_appliances" = "Chất thải đồ điện";
+
+"type.recycling.cans" = "Cans";
+
+"type.recycling.shoes" = "Old Shoes";
+
+"type.recycling.green_waste" = "Green/Organic Waste";
+
+"type.recycling.cartons" = "Cartons";
 
 "type.amenity.restaurant" = "Quán ăn";
 
@@ -1486,8 +1496,6 @@
 "type.boundary.administrative.3" = "boundary-administrative-3";
 
 "type.boundary.administrative.4" = "boundary-administrative-4";
-
-"type.boundary.administrative.4.state" = "boundary-administrative-4-state";
 
 "type.boundary.administrative.5" = "boundary-administrative-5";
 
@@ -2322,8 +2330,6 @@
 "type.natural.wetland.marsh" = "Wetland";
 
 "type.noexit" = "noexit";
-
-"type.noexit.motor_vehicle" = "noexit-motor_vehicle";
 
 "type.office" = "Văn phòng";
 

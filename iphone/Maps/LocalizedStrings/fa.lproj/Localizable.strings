@@ -1381,11 +1381,13 @@
 
 "type.amenity.public_bookcase" = "Book Exchange";
 
-"type.amenity.recycling" = "مرکز بازیافت";
+"type.amenity.recycling.centre" = "مرکز بازیافت";
 
-"type.amenity.recycling_container" = "ظرف بازیافت";
+"type.amenity.recycling" = "ظرف بازیافت";
 
-"type.recycling.toxic" = "پسماند سمی";
+"type.amenity.recycling.container" = "ظرف بازیافت";
+
+"type.recycling.batteries" = "ﺎﻫ ﯼﺮﺗﺎﺑ";
 
 "type.recycling.clothes" = "لباسهای قدیمی";
 
@@ -1400,6 +1402,14 @@
 "type.recycling.scrap_metal" = "ضایعات فلزی";
 
 "type.recycling.small_appliances" = "پسماند الکترونیکی";
+
+"type.recycling.cans" = "Cans";
+
+"type.recycling.shoes" = "Old Shoes";
+
+"type.recycling.green_waste" = "Green/Organic Waste";
+
+"type.recycling.cartons" = "Cartons";
 
 "type.amenity.restaurant" = "غذا";
 
@@ -1486,8 +1496,6 @@
 "type.boundary.administrative.3" = "boundary-administrative-3";
 
 "type.boundary.administrative.4" = "boundary-administrative-4";
-
-"type.boundary.administrative.4.state" = "boundary-administrative-4-state";
 
 "type.boundary.administrative.5" = "boundary-administrative-5";
 
@@ -2322,8 +2330,6 @@
 "type.natural.wetland.marsh" = "Wetland";
 
 "type.noexit" = "noexit";
-
-"type.noexit.motor_vehicle" = "noexit-motor_vehicle";
 
 "type.office" = "اداره";
 

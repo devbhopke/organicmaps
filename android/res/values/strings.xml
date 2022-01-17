@@ -777,9 +777,10 @@
 	<string name="type.amenity.prison">Prison</string>
 	<string name="type.amenity.pub">Pub</string>
 	<string name="type.amenity.public_bookcase">Book Exchange</string>
-	<string name="type.amenity.recycling">Recycling Center</string>
-	<string name="type.amenity.recycling_container">Recycling Container</string>
-	<string name="type.recycling.toxic">Toxic Waste</string>
+	<string name="type.amenity.recycling.centre">Recycling Center</string>
+	<string name="type.amenity.recycling">Recycling Container</string>
+	<string name="type.amenity.recycling.container">Recycling Container</string>
+	<string name="type.recycling.batteries">Batteries</string>
 	<string name="type.recycling.clothes">Old Clothes</string>
 	<string name="type.recycling.glass_bottles">Glass Bottles</string>
 	<string name="type.recycling.paper">Paper Waste</string>
@@ -787,6 +788,10 @@
 	<string name="type.recycling.plastic_bottles">Plastic Bottles</string>
 	<string name="type.recycling.scrap_metal">Scrap Metal</string>
 	<string name="type.recycling.small_appliances">Electronic Waste</string>
+	<string name="type.recycling.cans">Cans</string>
+	<string name="type.recycling.shoes">Old Shoes</string>
+	<string name="type.recycling.green_waste">Green/Organic Waste</string>
+	<string name="type.recycling.cartons">Cartons</string>
 	<string name="type.amenity.restaurant">Restaurant</string>
 	<string name="type.amenity.school">School</string>
 	<string name="type.amenity.shelter">Shelter</string>
@@ -830,7 +835,6 @@
 	<string name="type.boundary.administrative.2">boundary-administrative-2</string>
 	<string name="type.boundary.administrative.3">boundary-administrative-3</string>
 	<string name="type.boundary.administrative.4">boundary-administrative-4</string>
-	<string name="type.boundary.administrative.4.state">boundary-administrative-4-state</string>
 	<string name="type.boundary.administrative.5">boundary-administrative-5</string>
 	<string name="type.boundary.administrative.6">boundary-administrative-6</string>
 	<string name="type.boundary.administrative.7">boundary-administrative-7</string>
@@ -1249,7 +1253,6 @@
 	<string name="type.natural.wetland.bog">Wetland</string>
 	<string name="type.natural.wetland.marsh">Wetland</string>
 	<string name="type.noexit">noexit</string>
-	<string name="type.noexit.motor_vehicle">noexit-motor_vehicle</string>
 	<string name="type.office">Office</string>
 	<string name="type.office.company">Company Office</string>
 	<string name="type.office.estate_agent">Estate Agent</string>

@@ -1381,11 +1381,13 @@
 
 "type.amenity.public_bookcase" = "Microbibliothèque";
 
-"type.amenity.recycling" = "Centre de recyclage";
+"type.amenity.recycling.centre" = "Centre de recyclage";
 
-"type.amenity.recycling_container" = "Conteneur de recyclage";
+"type.amenity.recycling" = "Conteneur de recyclage";
 
-"type.recycling.toxic" = "Déchets toxiques";
+"type.amenity.recycling.container" = "Conteneur de recyclage";
+
+"type.recycling.batteries" = "Batteries";
 
 "type.recycling.clothes" = "Vêtement usagés";
 
@@ -1400,6 +1402,14 @@
 "type.recycling.scrap_metal" = "Ferraille";
 
 "type.recycling.small_appliances" = "Déchets d'équipements électriques";
+
+"type.recycling.cans" = "Cans";
+
+"type.recycling.shoes" = "Old Shoes";
+
+"type.recycling.green_waste" = "Green/Organic Waste";
+
+"type.recycling.cartons" = "Cartons";
 
 "type.amenity.restaurant" = "Restaurant";
 
@@ -1486,8 +1496,6 @@
 "type.boundary.administrative.3" = "boundary-administrative-3";
 
 "type.boundary.administrative.4" = "boundary-administrative-4";
-
-"type.boundary.administrative.4.state" = "boundary-administrative-4-state";
 
 "type.boundary.administrative.5" = "boundary-administrative-5";
 
@@ -2322,8 +2330,6 @@
 "type.natural.wetland.marsh" = "Marais";
 
 "type.noexit" = "noexit";
-
-"type.noexit.motor_vehicle" = "noexit-motor_vehicle";
 
 "type.office" = "Bureau";
 
