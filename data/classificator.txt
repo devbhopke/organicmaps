@@ -99,8 +99,10 @@ world  +
         prison  -
         pub  -
         public_bookcase  -
-        recycling  -
-        recycling_container  -
+        recycling  +
+            centre  -
+            container  -
+            {}
         restaurant  -
         school  -
         shelter  -
@@ -163,9 +165,7 @@ world  +
             11  -
             2  -
             3  -
-            4  +
-                state  -
-                {}
+            4  -
             5  -
             6  -
             7  -
@@ -627,9 +627,7 @@ world  +
             marsh  -
             {}
         {}
-    noexit  +
-        motor_vehicle  -
-        {}
+    noexit  -
     office  +
         company  -
         diplomatic  -
@@ -805,14 +803,18 @@ world  +
             {}
         {}
     recycling  +
+        batteries  -
+        cans  -
+        cartons  -
         clothes  -
         glass_bottles  -
+        green_waste  -
         paper  -
         plastic  -
         plastic_bottles  -
         scrap_metal  -
+        shoes  -
         small_appliances  -
-        toxic  -
         {}
     route  +
         ferry  -
