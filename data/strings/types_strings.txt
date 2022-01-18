@@ -2943,7 +2943,7 @@
 
   [type.recycling.cans]
     en = Cans
-    ru = Банки
+    ru = Жестяные банки
 
   [type.recycling.shoes]
     en = Old Shoes
@@ -2955,7 +2955,7 @@
 
   [type.recycling.cartons]
     en = Cartons
-    ru = Картон
+    ru = Тетрапак и аналоги
 
   [type.amenity.restaurant]
     en = Restaurant

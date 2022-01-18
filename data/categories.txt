@@ -4221,20 +4221,20 @@ zh-Hant:電子垃圾
 fa:پسماند الکترونیکی
 
 recycling-cans|@recycling
-en:Cans Recycling
-ru:Прием банок|Утилизация банок|Переработка банок
+en:Cans Recycling|Tin Cans|Tins|Tincans
+ru:Жестяные банки|Консервные банки
 
 recycling-shoes|@recycling
 en:Shoes Recycling
-ru:Старая обувь|Сдать обувь
+ru:Обувь|Прием обуви|Сдать обувь
 
 recycling-green_waste|@recycling
-en:Organic Waste|Green Waste
+en:Organic Waste|Green Waste|Food Waste|Garden Waste
 ru:Органические отходы|Отходы еды
 
 recycling-cartons|@recycling
 en:Cartons Recycling
-ru:Прием картона|Утилизация картона|Переработка картона
+ru:Тетрапак|Переработка тетрапака|Утилизация тетрапака
 
 amenity-school
 en:3School|U+1F392|U+1F3EB
